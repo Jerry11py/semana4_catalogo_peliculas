@@ -55,16 +55,25 @@ section {
     display: none;
 }
 
-#movies li,
-#favorites-list li {
-    margin-bottom: 10px;
+#movies{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+} 
+
+#movies div{
+    text-align: center;
 }
 
 #movies img {
     max-width: 150px;
     border-radius: 5px;
-    vertical-align: middle;
     cursor:pointer;
+}
+
+
+#favorites-list li {
+    margin-bottom: 10px;
 }
 
 #details {
